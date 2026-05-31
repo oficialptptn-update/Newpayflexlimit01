@@ -1,0 +1,11 @@
+let time = 300;
+
+setInterval(()=>{
+let min=Math.floor(time/60);
+let sec=time%60;
+
+document.getElementById("timer").innerHTML=
+`${min}:${sec.toString().padStart(2,'0')}`;
+
+time--;
+},1000);
